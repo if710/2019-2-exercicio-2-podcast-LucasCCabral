@@ -8,11 +8,8 @@ import org.xmlpull.v1.XmlPullParserFactory
 
 import java.io.IOException
 import java.io.StringReader
-import java.net.HttpURLConnection
 import java.net.URL
 import java.util.ArrayList
-import android.os.AsyncTask.execute
-import java.io.InputStream
 
 
 object Parser  {
