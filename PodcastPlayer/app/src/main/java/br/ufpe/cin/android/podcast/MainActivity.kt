@@ -14,7 +14,9 @@ import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 import android.net.NetworkInfo
 import android.content.Context.CONNECTIVITY_SERVICE
+import android.content.Intent
 import android.net.ConnectivityManager
+import android.view.View
 import org.jetbrains.anko.doAsyncResult
 
 
@@ -64,6 +66,7 @@ class MainActivity : AppCompatActivity() {
                 setHasFixedSize(true)
                 layoutManager = viewManager
                 adapter = viewAdapter
+
             }
         }
     }
