@@ -12,12 +12,7 @@ import br.ufpe.cin.android.podcast.persistence.AppDatabase
 import br.ufpe.cin.android.podcast.persistence.Podcast
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
-import android.net.NetworkInfo
-import android.content.Context.CONNECTIVITY_SERVICE
-import android.content.Intent
 import android.net.ConnectivityManager
-import android.view.View
-import org.jetbrains.anko.doAsyncResult
 
 
 class MainActivity : AppCompatActivity() {
@@ -61,12 +56,10 @@ class MainActivity : AppCompatActivity() {
         if(items.isNotEmpty()) {
             viewManager = LinearLayoutManager(this)
             viewAdapter = PodcastAdapter(items)
-
             recyclerView = findViewById<RecyclerView>(R.id.podcastList).apply {
                 setHasFixedSize(true)
                 layoutManager = viewManager
                 adapter = viewAdapter
-
             }
         }
     }
